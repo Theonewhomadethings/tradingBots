@@ -1,0 +1,24 @@
+Quant connect API
+
+Trading strategy (conceptual level):
+simple break out strategy
+	looks at past highs of a given instrument, generates a buy signal as soon as the price manages to break out from its previous high. 
+	After buying the secuiruty we want to send out a trading stop loss that follows the price upwards. As long as  the price continues
+	to rise upwards our stop loss will do so aswell. But as soon as it drops more than a certain amount the position will be closed.
+	The idea behind this trading stop loss is to cut our losers short and let the winner run. 
+
+When developing trading algortihms it is very important to be very precise with what you want.
+
+Identifying a price breakout is not simple for a bot.
+
+We have to specify how a breakout is defined for our strategy to work.
+Easy approach is to say that we look at the closing prices for the last 3 months and whatever price is the highest 
+is our breakout level. 
+
+Why do we look at 3months?
+We want our algorithm to have a dynamic approach: volatility adjusted lookback length 
+Dynamically determine how far it looks back for a breakout level based on the secuitys volatility. If volatility is high then we want to look further into the past when volatility is relativility low.
+
+ Summary:
+Strategy is: Simple breakout strategy, that dynamically changes its lookback length. It uses a trading stop loss to protect against potential losses. 
+
