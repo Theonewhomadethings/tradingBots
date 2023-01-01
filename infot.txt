@@ -1,4 +1,0 @@
-Trading bot (50 lines of code) -Python
-
-This program uses python to scrape wikipedia data and uses it to create a trading algorithm in which we trade
-based on changes in the members of the S&P500 index using the Quantconnect API. 
