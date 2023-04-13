@@ -1,8 +1,5 @@
 Title: Quantititative AI Trading bot
 
-Current stage:
-(Keras, SKlearn )
-Back end implemention. Front end only works with Alpaca API at the moment.
+full-stack web application used to test the algorithmic stock trading bot. React frontend, Flask backend, PostgreSQL database.
 
-Plan:
-Use JS React and Python flask to make a web application to build a full stack implementation.
+https://user-images.githubusercontent.com/88815725/231652811-653b1c14-5ab0-4a11-a13c-0947b7704234.mov
